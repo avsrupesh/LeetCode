@@ -9,9 +9,3 @@ select product_id, year as first_year, quantity, price
 from cte
 where year=r
 
-/*
-select product_id, year as first_year, quantity, price
-from (select *, First_value(year) over(partition by product_id order by year) as r from Sales)
-where year=r
-*/
-
