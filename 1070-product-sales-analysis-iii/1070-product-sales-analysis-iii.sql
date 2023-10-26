@@ -9,3 +9,4 @@ select product_id, year as first_year, quantity, price
 from cte
 where year=r
 
+
